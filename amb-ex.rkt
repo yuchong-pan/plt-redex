@@ -31,3 +31,11 @@
  L
  (_ ..._1 e_1 _ ..._2 _ _ ..._2 e_2 _ ..._1)
  (term (1 2 3 4 5)))
+
+;; Exercise 5
+
+(judgment-holds
+ (types (x : num ·)
+        (λ (x (→ num num)) x)
+        t)
+ t)
